@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>About Us | Sweet Inspirations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+  <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+  <script src="custom.js"></script>
+</head>
+<body>
+  <div class="container">
+	<div class="row">
+		<div class="col-md-2 hidden-xs hidden-sm" id="sidebar"></div>
+		
+		<div class="col-md-8" id="content">
+			<div class="row" id="heading">
+				<div class="col-md-11 col-md-offset-1">
+					<h1 id="header">Sweet Inspirations</h1>
+					<h3 id="subheader">Truffles & Candies</h3>
+				</div>
+			</div>
+			<div class="row hidden-sm hidden-xs" id="mainNav">
+				<div class="col-md-11" id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a class="active" href="about.html">About Us</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="photos.html">Photo Gallery</a></li>
+						<li><a href="shipping.html">Shipping Information</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<form name="dropdown" class="hidden-md hidden-lg">
+			<select name="navigation" onChange="goToNewPage()">
+			<option id="home" value="index.html">Home</option>
+			<option id="about" selected="selected" value="about.html">About</option>
+			<option id="menu" value="menu.html">Menu</option>
+			<option id="photos" value="photos.html">Photo Gallery</option>
+			<option id="shippingPage" value="shipping.html">Shipping Information</option>
+			</select>
+			</form>
+			
+			<div class="col-md-8">
+			<h2 id="title">About <i>Sweet Inspirations</i></h2>
+			<img src="images/founders.jpg" alt="Founders: Beth Garcia and Kim Ahlenslager" id="aboutImage">
+			<p class="innerPageText">Beth Garcia and Kim Ahlenslager first crossed paths as college students, but soon learned of a shared appetite for creating mouthwatering baked goods and decadent candies. The bond turned into a lifelong friendship beyond the boundaries of their kitchen. Upon countless encouragement from friends and family, Beth and Kim's friendship turned into a thriving successful business.</p>
+			<p class="innerPageText">In 2000, <i>Sweet Inspirations</i> was created, providing quality candies that are all individually handmade from the finest ingredients. The truffles are made in a variety of flavors and can be individually wrapped or boxed to appeal to the recipients love for chocolate!</p> 
+			<p class="innerPageText">Celebrate the holidays, weddings, parties or simply to just say "hello" by sending a <i>Sweet Inspiration</i> truffle or candy!</p>
+			</div>
+			
+			<div class="col-md-4" id="contact">
+				<p>Interested in learning more?</br>Contact us!</br>sweetinspirations@live.com</br>(559) 978-3839 or (559) 696-4713</p>
+			</div>
+			
+			<footer>&copy; 2013 by Beth Garcia</footer>
+		</div>
+		
+		<div class="col-md-2 hidden-xs hidden-sm" id="sidebar2"></div>
+	  </div>
+	</div>
+</body>
+</html>

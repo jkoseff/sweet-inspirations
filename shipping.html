@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+  <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+  <script src="custom.js"></script>
+</head>
+<body>
+  <div class="container">
+	<div class="row">
+		<div class="col-md-2 hidden-xs hidden-sm" id="sidebar"></div>
+		
+		<div class="col-md-8" id="content">
+			<div class="row" id="heading">
+				<div class="col-md-11 col-md-offset-1">
+					<h1 id="header">Sweet Inspirations</h1>
+					<h3 id="subheader">Truffles & Candies</h3>
+				</div>
+			</div>
+			<div class="row hidden-sm hidden-xs" id="mainNav">
+				<div class="col-md-11" id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a class="about.html" href="about.html">About Us</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a href="photos.html">Photo Gallery</a></li>
+						<li><a class="active">Shipping Information</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<form name="dropdown" class="hidden-md hidden-lg">
+			<select name="navigation" onChange="goToNewPage()">
+			<option id="home" value="index.html">Home</option>
+			<option id="about" value="about.html">About</option>
+			<option id="menu" value="menu.html">Menu</option>
+			<option id="photos" value="photos.html">Photo Gallery</option>
+			<option id="shippingPage" selected="selected" value="shipping.html">Shipping Information</option>
+			</select>
+			</form>
+			
+			<div class="col-md-8">
+				<h2 id="title">Shipping Information</h2>
+				</br>
+				<h4 id="subtitle">Our Packaging</h4>
+				<p class="shippingPageText">Sweet Inspirations will hand-pick a beautiful assortment of our freshest chocolate truffles, for every signature gift box order, regardless of box size, unless otherwise requested in the "Special Instructions" on the order confirmation page during the check-out process. When placing your order, especially as a gift for others, please note that all of our gourmet candies are preservative free with no more than a <b>three</b> week shelf life.</p></br>
+				<h4 id="subtitle">Our Shipping Policy</h4>
+				<p class="shippingPageText">Please provide a United States street address, as we cannot ship to P.O. boxes. Be sure to include the appropriate suite or apartment numbers when necessary to ensure proper delivery and that someone is home to receive the order. At this time orders will be shipped within the continental United States only.</p>
+				<p class="shippingPageText">All orders must be received by 1:00 p.m. P.D.T., Monday through Thursday, to ensure overnight delivery the next day. We do not ship for Saturday, Sunday, or Monday arrivals. <b>Also, due to our Central California location, the heat prohibits the shipping of chocolate and other items that may melt between the months of May through November.</b></p>
+				<p class="shippingPageText">We want to make sure that we are able to accurately process your order. The details of your name, billing address, shipping address, and method of payment are critical. We cannot be responsible for errors in information that is provided to us. Costs resulting from such errors will be charged to you.</p>
+				<p class="shippingPageText">Every item we sell is carefully inspected before it is shipped. If merchandise is defective or damaged upon receipt, please contact us immediately after your package arrives. Shipping charges will not be refunded. Returned products must be in absolutely new, unused, and uneaten condition for refund.</p>
+				<p class="shippingPageText">We are not responsible for shipping delays while your product is in transit due to weather, strike, mechanical failure, or circumstances beyond our control, and are not able to offer refunds for those reasons.</p>
+				<p class="shippingPageText"><i>Please note all pricing is subject to change, depending on the time of year, as well as weight and location.</i></p></br>
+				<h4 id="subtitle">Cooling Materials</h4>
+				<p class="shippingPageText">Shipping chocolate is tricky business. We work hard to ensure that our chocolate is delivered fresh and in good condition. To reduce the risk of melted chocolate on orders in transit to warmer climates (75 degrees and higher), we have added ice packs to your order for a $5 fee.</p></br>
+				<h4 id="subtitle">Shipping Over the Weekend</h4>
+				<p class="shippingPageText">If you are shipping a package to a warm weather destination over a weekend, your package may be held until the following Monday to ensure minimal time in transit.</p></br>
+				<h4 id="subtitle">Delivery Times for Businesses & Residences</h4>
+				<p class="shippingPageText"> UPS&reg; and USPS&reg; are our preferred shipping vendors. All of our shipping vendors only deliver on business days, unless Saturday delivery is specified (where available, additional charges apply). Our shipping vendors may require a signature for delivery at the discretion of the driver. Deliveries to businesses occur between 9 am and 5 pm, and deliveries to residences occur between 9 am and 7 pm.</p></br>
+			</div>
+			<div class="col-md-4" id="shipping">
+				<div id="shippingText">
+					<table>
+						<tr>
+							<th>Shipping Methods</th>
+							<th>Rate</th>
+						</tr>
+						<tr>
+							<td>Standard (3-10 Business Days)</td>
+							<td>$13.95</td>
+						</tr>
+						<tr>
+							<td>Express (2 Days)</td>
+							<td>Please call</td>
+						</tr>
+						<tr>
+							<td>Urgent (Next Day)</td>
+							<td>Please call</td>
+						</tr>
+						<tr>
+							<td>Saturday</td>
+							<td>Please call</td>
+						</tr>
+						<tr>
+							<td>Alaska</td>
+							<td>$29.95</td>
+						</tr>
+						<tr>
+							<td>Hawaii</td>
+							<td>$29.95</td>
+						</tr>
+						<tr>
+							<td>Canada</td>
+							<td>$49.00 + $1.00 per item</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			
+			<footer>&copy; 2013 by Beth Garcia</footer>
+		</div>
+		
+		<div class="col-md-2 hidden-xs hidden-sm" id="sidebar2"></div>
+	  </div>
+	</div>
+</body>
+</html>
