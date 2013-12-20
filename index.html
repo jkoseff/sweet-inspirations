@@ -6,10 +6,9 @@
   <title>Sweet Inspirations</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-  <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css" />
   <link rel="stylesheet" href="style.css" type="text/css" media="screen">
   <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
   <script src="custom.js"></script>
@@ -48,50 +47,36 @@
 			</select>
 			</form>
 			
-			<div id="wrapper">
-			<div id="carousel-frame">
-				<div id="carousel-nav">
-					<a href="#"><img src="images/prev.jpg" id="prev" alt="Previous"></a>
-					<a href="#"><img src="images/next.jpg" id="next" alt="Next"></a>
-				</div>
-				<div class="carousel-inner">
-					<div class="carousel-slide">
-						<img class="carousel-image-active" src="images/truffles.jpg" alt="Truffles">
-						<div class="carousel-caption">
-							<h3>"Simply sweet, simply chocolate, simply an inspiration."</h3>
-						</div>
-					</div>
-					<div class="carousel-slide">
-						<img class="carousel-image-hidden" src="images/chocolate truffles.jpg" alt="Truffles">
-						<div class="carousel-caption">
-							<h3>Second Caption</h3>
-						</div>
-					</div>
-					<div class="carousel-slide">
-						<img class="carousel-image-hidden" src="images/boxes.jpg" alt="Gift boxes">
-						<div class="carousel-caption">
-							<h3>Third Caption"</h3>
-						</div>
+			<div class="wrapper">
+				<div id="slider">
+					<img id="1" src="images/truffles.jpg">
+					<img id="2" src="images/chocolate truffles 3.jpg">
+					<img id="3" src="images/variety truffles.jpg">
+					<img id="4" src="images/variety truffles 2.jpg">
+					<div class="carousel-caption">
+						<h3 class="slidercaption" id="1">"Simply sweet, simply chocolate, simply an inspiration"</h3>
+						<h3 class="slidercaption" id="2">"I wasn't a sweet-eater until I tasted these truffles"</h3>
+						<h3 class="slidercaption" id="3">"A must have holiday treat for friends and family"</h3>
+						<h3 class="slidercaption" id="4">"A mouthwatering experience for any occasion"</h3>
 					</div>
 				</div>
-			</div>
+	
+				<!--<a href="#" class="left" onClick="prev(); return false;">Previous</a>
+				<a href="#" class="right" onClick="next(); return false;">Next</a>-->
 			</div>
 			
 			<div class="row hidden-md hidden-lg" id="accordion">
 			  <h3 id="accordionHeader">Welcome</h3>
 			  <div>
 				<p class="text"><i>Sweet Inspirations</i> are the creation of longtime friends, Beth Garcia and Kim Ahlenslager. What started as Beth's childhood love for her "Easy-bake Oven" and Kim's passion to explore and create in the kitchen as a small child, became the launching pad that would soon transform into the motivation behind <i>Sweet Inspirations</i>.</p>
-				<img class="image" src="images/single truffle.jpg" alt="Truffle">
 			  </div>
 			  <h3 id="accordionHeader">Seasonal Packages</h3>
 			  <div>
 				<p class="text">From Valentine's Day to Christmas, we have seasonal packages to make your chocolatey gift special. Prices and styles may vary. Go to the <a class="link" href="menu.html">Menu</a> page for more information.</p>
-				<img class="image2" src="images/boxes2.jpg" alt="Gift boxes">
 			  </div>
 			  <h3 id="accordionHeader">Contact Us</h3>
 			  <div>
-				<p class="text">If you would like more information about Sweet Inspirations Truffles & Candies, send us an <a href="mailto:sweetinspirations@live.com">e-mail</a>, or give us a call at: <u>(559) 978-3839</u> or <u>(559) 696-4713</u>.</p>
-				<img class="image2" src="images/caramel.jpg" alt="Caramel">
+				<p class="text">If you would like more information about <i>Sweet Inspirations</i>: Truffles & Candies, send us an <a class="link" href="mailto:sweetinspirations@live.com">e-mail</a>, or give us a call at: <u>(559) 978-3839</u> or <u>(559) 696-4713</u>.</p>
 			  </div>
 			</div>
 			
@@ -101,25 +86,27 @@
 					<h3 class="contentHeaderText">Welcome</h3>
 				</div>
 				<p class="text"><i>Sweet Inspirations</i> are the creation of longtime friends, Beth Garcia and Kim Ahlenslager. What started as Beth's childhood love for her "Easy-bake Oven" and Kim's passion to explore and create in the kitchen as a small child, became the launching pad that would soon transform into the motivation behind <i>Sweet Inspirations</i>.</p>
-				<img class="image" src="images/single truffle.jpg" alt="Truffle">
+				<img id="image" src="images/single truffle.jpg" alt="Truffle">
 			</div>
-			<div class="col-md-4 hidden-sm hidden-xs" id="seasonalPackages">
+			<div class="col-md-4 hidden-sm hidden-xs" id="aboutSeasonalPackages">
 				<div class="contentHeader">
 					<h3 class="contentHeaderText">Seasonal Packages</h3>
 				</div>
 				<p class="text">From Valentine's Day to Christmas, we have seasonal packages to make your chocolatey gift special. Prices and styles may vary. Go to the <a class="link" href="menu.html">Menu</a> page for more information.</p>
-				<img class="image2" src="images/boxes2.jpg" alt="Gift boxes">
+				<img id="image2" src="images/boxes2.jpg" alt="Gift boxes">
 			</div>
 			<div class="col-md-4 hidden-sm hidden-xs" id="contactUs">
 				<div class="contentHeader">
 					<h3 class="contentHeaderText">Contact Us</h3>
 				</div>
-				<p class="text">If you would like more information about Sweet Inspirations Truffles & Candies, send us an <a href="mailto:sweetinspirations@live.com">e-mail</a>, or give us a call at: <u>(559) 978-3839</u> or <u>(559) 696-4713</u>.</p>
-				<img class="image2" src="images/caramel.jpg" alt="Caramel">
+				<p class="text">If you would like more information about <i>Sweet Inspirations</i>: Truffles & Candies, send us an <a class="link" href="mailto:sweetinspirations@live.com">e-mail</a>, or give us a call at: <u>(559) 978-3839</u> or <u>(559) 696-4713</u>.</p>
+				<img id="image3" src="images/caramel.jpg" alt="Caramel">
 			</div>
 			</div>
 			
-			<footer>&copy; 2013 by Beth Garcia</footer>
+			<div class="col-xs-12">
+				<footer id="copyright">&copy; 2013 Beth Garcia. All rights reserved. | Created by Joanna Koseff</footer>
+			</div>
 			
 		</div>
 		

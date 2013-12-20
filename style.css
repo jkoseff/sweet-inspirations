@@ -30,8 +30,6 @@
 	top:55px;
 }
 
-
-
 #sidebar {
 	background-color:white;
 	height:100%;
@@ -43,26 +41,26 @@
 }
 
 #mainNav {
- background-color:#EED0EE;
- list-style-type:none;
- padding:0;
- width:100%;
- height:50px;
- text-align:center;
+	background-color:#EED0EE;
+	list-style-type:none;
+	padding:0;
+	width:100%;
+	height:50px;
+	text-align:center;
  }
  
  
 #mainNav a {
- color:#000;
- font-size:14px;
- font-weight:bold;
- text-transform:uppercase;
- text-decoration:none;
- margin:7px 25px 7px 25px;
+	color:#000;
+	font-size:14px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-decoration:none;
+	margin:7px 25px 7px 25px;
 }
 
 #mainNav a:hover {
- color:blue;
+	color:blue;
 }
 
 #mainNav a.active {
@@ -70,11 +68,11 @@
 }
 
 #mainNav ul {
- margin-top:15px;
+	margin-top:15px;
  }
 
 #mainNav li{
- display:inline;
+	display:inline;
 }
 
 #accordion {
@@ -91,62 +89,54 @@
 	/*color:#c7b5b6;*/
 }
 
-.ui-accordion-header {
-	background-color:blue !important; /*#402112*/
+/*.ui-accordion-header {
+	background-color:blue !important; #402112
+}*/
+
+.wrapper {
+	width:100%; /*900px*/
+	/*margin:0 auto;*/
 }
 
-#carousel-frame {
+#slider {
 	width:100%;
-	height:auto;
-	max-height:430px;
+	height:420px; /*500px*/
 	overflow:hidden;
-	position:relative;
+	/*margin:30px auto;*/
 }
 
-#carousel-nav {
-	position:absolute;
-	top:50%;
+#slider > img {
 	width:100%;
-	display:block;
-	margin-top:-20px;
-	z-index:99999;
-}
-
-#prev {
+	height:100%;
 	float:left;
-	padding:10px;
-	margin-top:0px;
+	display:none;
 }
 
-#next {
+.left, .right {
+	padding:5px 10px;
+	background-color:F0F0F0;
+	margin-top:30px;
+	text-decoration:none;
+	color:#666;
+}
+
+a.left {
+	float:left;
+}
+
+a.right {
 	float:right;
-	padding:10px;
-	margin-top:0px;
-	margin-right:30px;
 }
 
 .carousel-caption {
 	position:absolute;
-	bottom:0px;
+	/*bottom:0px;*/
+	height: 100px;
+	top: 500px;
 	z-index:9999;
 	background-color:rgba(0,0,0,0.6);
 	width:70%;
 	left:0px;
-}
-
-.carousel-slide, .carousel-slide-active {
-	position:relative;
-	float:left;
-	display:inline-block;
-}
-
-.carousel-image-active {
-	max-width:100%;
-	height:auto;
-}
-
-.carousel-image-hidden {
-	visibility:hidden;
 }
 
 .contentHeader {
@@ -166,13 +156,29 @@
 	font-size:16px;
 }
 
-.image {
+.link {
+	position:relative;
+	z-index:100;
+	color:#008080;
+	font-weight:bold;
+}
+
+.link:hover {
+	text-decoration:underline;
+}
+
+#image {
 	width:260px;
 	margin-top:20px;
+}
+
+#image2 {
+	width:260px;
+	margin-top:108px;
 	margin-bottom:20px;
 }
 
-.image2 {
+#image3 {
 	width:260px;
 	margin-top:108px;
 	margin-bottom:20px;
@@ -195,11 +201,21 @@
 	margin-bottom:40px;*/
 }
 
+.aboutPageText {
+	font-size:16px;
+	font-family:"Arial", Helvetica, adobe-helvetica, Arial Narrow;
+	margin-left:15px;
+}
+
 #aboutImage {
 	float:right;
 	width:250px;
 	margin-top:10px;
 	margin-left:5px;
+}
+
+#aboutText {
+	margin-bottom:70px;
 }
 
 #contact {
@@ -223,6 +239,16 @@
 	margin-bottom:20px;
 }
 
+#packagesText {
+	font-size:14px;
+	font-family:"Trebuchet MS", Arial;
+	position:relative;
+	top:0px;
+	right:0px;
+	margin-left:15px;
+	margin-bottom:20px;
+}
+
 .package {
 	font-size:17px;
 	font-family:"Trebuchet MS", Arial;
@@ -238,22 +264,42 @@
 
 .menuImage {
 	width:255px;
+	height:191px;
 	margin-top:30px;
 }
 
 .photoGallery {
 	margin-top:10px;
-	width:204px;
-	height:153px;
+	width:204px; /*204px*/
+	height:153px; /*153px*/
 }
 
 .photoGalleryCaption {
 	font-family:"Arial", Helvetica, adobe-helvetica, Arial Narrow;
 	font-weight:bold;
 	font-style:italic;
-	font-size:13px;
+	font-size:15px;
 	width:204px;
 	text-align:center;
+}
+
+.inSeason {
+	background-color:#94DBFF;
+	width:100px;
+	height:25px;
+	z-index:200;
+	position:relative;
+	top:-56px; /*138px*/
+	border:1px solid black;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	text-align:center;
+	z-index:100;
+}
+
+#inSeasonPicture {
+	width:212px;
+	height:194px;
 }
 
 .photoPageSidebar {
@@ -261,12 +307,69 @@
 	text-align:center;
 	border-radius:10px;
 	-moz-border-radius:10px;
+	margin-bottom:15px;
 }
 
 #photoPageSidebarText {
 	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size:16px;
+	font-size:18px;
 	font-weight:bold;
+	padding:10px;
+}
+
+.testimony {
+	font-size:16px;
+	font-style:italic;
+	padding:10px;
+}
+
+.line {
+	height:3px;
+	width:100%; /*197px*/
+	margin-bottom:15px;
+}
+
+#seasonalPackages {
+	padding:0px;
+	margin:0px;
+}
+
+.seasonPackage {
+	width:269px;
+	height:188px;
+	margin:0px;
+	padding:0px;
+}
+
+#seasonPackage2 {
+	margin-left:30px;
+}
+
+#packagesInformation {
+	display:block;
+	width:100%;
+	margin:0;
+	padding:0px;
+}
+
+.photoGalleryCaption2 {
+	font-family:"Arial", Helvetica, adobe-helvetica, Arial Narrow;
+	font-weight:bold;
+	font-style:italic;
+	font-size:15px;
+	width:269px;
+	text-align:center;
+}
+
+#secondSubtitle {
+	font-size:21px;
+	font-family:"Trebuchet MS", Arial;
+	font-weight:bold;
+	margin-left:15px;
+	margin-bottom:20px;
+	position:relative;
+	top:0px;
+	right:0px;
 }
 
 .shippingPageText {
@@ -280,6 +383,7 @@
 	font-family:"Arial", Helvetica, adobe-helvetica, Arial Narrow;
 	font-size:12px;
 	margin-top:170px;
+	margin-left:30px;
 	height:235px;
 	width:285px;
 	border-radius:10px;
@@ -294,39 +398,407 @@ th {
 	border-bottom:10px solid #8E8BA5;
 }
 
-footer {
+#copyright {
+	width:100%;
 	text-align:center;
+	clear:all;
+	margin-top:50px;
 }
 
-@media screen and (max-width: 460px) {
+#copyright2 {
+	width:100%;
+	text-align:center;
+	clear:all;
+	position:absolute;
+	bottom:0px;
+}
+
+#copyright3 {
+	width:100%;
+	text-align:center;
+	clear:all;
+	float:left;
+}
+
+#photoRow {
+	height:150px;
+}
+
+#photoSpace {
+	height:800px;
+	width:200px;
+}
+
+#photoSpace2 {
+	margin-top:20px;
+	width:204px;
+	height:153px;
+}
+
+@media screen and (max-width: 480px) {
+	#header {
+		font-size:35px;
+	}
+	
 	#subheader {
+		font-size:21px;
 		top:30px;
 	}
-	#carousel-frame {
-		max-height:200px;
-		height:auto;
+	
+	#heading {
+		height:115px;
 	}
+	
+	#slider {
+		height:250px;
+	}
+	
 	.carousel-caption {
+		top:320px;
+		height:75px;
 		width:100%;
 		padding:0;
 	}
 	.carousel-caption h3 {
 		font-size:16px;
 	}
+	
+	.innerPageText {
+		margin-left:5px;
+	}
+		
+	#aboutImage {
+		float:left;
+		margin-left:10px;
+		margin-bottom:10px;
+	}
+	
+	#title {
+		margin-left:10px;
+	}
+	
+	#contact {
+		margin-top:-30px;
+		margin-left:6%;
+		margin-bottom:30px;
+		color:#333;
+	}
+	
+	.phoneNumber {
+		color:#0000CD !important;
+	}
+	
+	#subtitle {
+		margin-left:10px;
+	}
+	
+	.package {
+		margin-left:10px;
+	}
+	
+	.photoGallery {
+		margin-left:30px;
+	}
+
+	.photoGalleryCaption {
+		width:265px;
+		text-align:center;
+	}
+	
+	.inSeason {
+		left:30px;
+	}
+	
+	.line {
+		width:100%; /*282px*/
+	}
+	
+	#secondSubtitle {
+		top:30px;
+		right:0px;
+	}
+	
+	#packagesText {
+		top:30px;
+		right:0px;
+	}
+	
+	#packagesLink {
+		text-align:center;
+		color:#008080;
+		font-weight:bold;
+		font-style:italic;
+		font-size:16px;
+	}
+	
+	#trufflePicturesLink {
+		margin-top:20px;
+		margin-bottom:20px;
+		font-style:italic;
+		color:#008080;
+		font-weight:bold;
+	}
+	
+	#shipping {
+		margin-top:20px;
+		margin-left:15px;
 }
-@media screen and (max-width: 950px) {
+	
+	#copyright2 {
+		position:static;
+		bottom:auto;
+	}
+	
+	#copyright3 {
+		position:absolute;
+		bottom:10px;
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 991px) {
+	#header {
+		font-size:35px;
+	}
+	
 	#subheader {
+		font-size:21px;
 		top:30px;
 	}
-	#carousel-frame {
-		max-height:400px;
-		height:auto;
+	
+	#heading {
+		height:115px;
 	}
+	
+	#slider {
+		height:400px;
+	}
+	
 	.carousel-caption {
+		top:460px;
+		height:75px;
 		width:100%;
 		padding:0;
 	}
 	.carousel-caption h3 {
-		font-size:16px;
+		font-size:21px;
+	}
+	
+	.innerPageText {
+		margin-left:5px;
+	}
+	
+	.aboutPageText {
+		margin-left:5px;
+}
+		
+	#aboutImage {
+		float:left;
+		margin-left:10px;
+		margin-right:10px;
+		margin-bottom:10px;
+	}
+	
+	#title {
+		margin-left:10px;
+	}
+	
+	#contact {
+		color:#333;
+		margin-left:31%;
+		margin-top:-20px;
+		margin-bottom:30px;
+	}
+	
+	.phoneNumber {
+		color:#0000CD;
+	}
+	
+	#subtitle {
+		margin-left:10px;
+	}
+	
+	.package {
+		margin-left:10px;
+	}
+	
+	.menuImage {
+		margin-top:5px;
+		margin-bottom:25px;
+	}
+	
+	.photoGallery {
+		margin-left:0px;
+	}
+
+	.photoGalleryCaption {
+		width:205px;
+		text-align:center;
+	}
+	
+	.inSeason {
+		left:0px;
+	}
+	
+	.photoPageSidebar {
+		width:200px;
+		margin-top:0px;
+	}
+	
+	.line {
+		width:200px; /*282px*/
+	}
+	
+	#secondSubtitle {
+		top:0px;
+		right:0px;
+	}
+	
+	#packagesText {
+		top:0px;
+		right:0px;
+	}
+	
+	#seasonPackage2 {
+		margin-left:17px;
+		margin-top:19px;
+	}
+	
+	#shipping {
+		margin-top:20px;
+		margin-left:15px;
+}
+	
+	#copyright2 {
+		position:static;
+		bottom:auto;
+	}
+	
+	#copyright3 {
+		position:absolute;
+		bottom:10px;
 	}
 }
+
+@media screen and (min-width: 992px) and (max-width: 1291px) {
+	#sidebar {
+		width:10%;
+	}
+	
+	#sidebar2 {
+		width:10%;
+	}
+	
+	#content {
+		width:80%;
+	}
+	
+	#mainNav a {
+		margin:7px 18px 7px 18px;
+	}
+	
+	.carousel-caption h3 {
+		font-size:22px;
+	}
+	
+	#image {
+		width:230px;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+
+	#image2 {
+		width:230px;
+		margin-top:130px;
+		margin-bottom:20px;
+	}
+	
+	#image3 {
+		width:230px;
+		margin-top:150px;
+		margin-bottom:20px;
+	}
+	
+	#aboutImage {
+		width:230px;
+		margin-top:10px;
+		margin-left:10px;
+	}
+	
+	#contact {
+		width:250px;
+		margin-top:-40%;
+		margin-left:67%;
+	}
+	
+	.menuImage {
+		width:235px;
+		height:170px;
+	}
+	
+	.photoGallery {
+		width:170px; /*204px*/
+		height:140px; /*153px*/
+	}
+
+	.photoGalleryCaption {
+		font-size:14px;
+		width:170px;
+	}
+	
+	#inSeasonPicture {
+		width:176px;
+		height:180px;
+	}
+	
+	.inSeason {
+		top:-55px;
+	}
+	
+	#photoSpace2 {
+		width:204px;
+		height:110px;
+	}
+
+	
+	#secondSubtitle {
+		font-size:21px;
+		font-family:"Trebuchet MS", Arial;
+		font-weight:bold;
+		margin-left:15px;
+		margin-bottom:20px;
+		position:static;
+	}
+	
+	#packagesText {
+		font-size:14px;
+		font-family:"Trebuchet MS", Arial;
+		position:relative;
+		top:0px;
+		left:0px;
+		margin-left:15px;
+		margin-bottom:20px;
+	}
+	
+	.seasonPackage {
+		width:230px;
+		height:160px;
+		margin:0px;
+		padding:0px;
+	}
+
+	#seasonPackage2 {
+		margin-left:30px;
+		width:170px;
+		height:200px;
+	}
+
+	.photoGalleryCaption2 {
+		width:230px;
+	}
+	
+	.shippingPageText {
+		margin-left:15px;
+	}
+	
+	#shipping {
+		margin-left:25px;
+	}

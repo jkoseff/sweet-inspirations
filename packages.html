@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Packages | Sweet Inspirations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+  <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+  <script src="custom.js"></script>
+</head>
+<body>
+  <div class="container">
+	<div class="row">
+		<div class="col-md-8" id="content">
+			<div class="row" id="heading">
+				<div class="col-md-11 col-md-offset-1">
+					<h1 id="header">Sweet Inspirations</h1>
+					<h3 id="subheader">Truffles & Candies</h3>
+				</div>
+			</div>
+			<div class="row hidden-xs hidden-sm" id="mainNav">
+				<div class="col-md-11" id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a class="about.html" href="about.html">About Us</a></li>
+						<li><a href="menu.html">Menu</a></li>
+						<li><a class="active">Photo Gallery</a></li>
+						<li><a href="shipping.html">Shipping Information</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<form name="dropdown" class="hidden-md hidden-lg">
+			<select name="navigation" onChange="goToNewPage()">
+			<option id="home" value="index.html">Home</option>
+			<option id="about" value="about.html">About</option>
+			<option id="menu" value="menu.html">Menu</option>
+			<option id="photos" selected="selected" value="photos.html">Photo Gallery</option>
+			<option id="shippingPage" value="shipping.html">Shipping Information</option>
+			</select>
+			</form>
+
+			<div class="col-md-12 hidden-sm hidden-md hidden-lg" id="packagesInformation">
+				<h4 id="secondSubtitle">Packages & Special Ribbons</h4>
+				<p id="packagesText">These are just a few examples of the wonderfully beautiful (& creative!) boxes, packages, and ribbons we can add on to make your order special and unique!</p></br></br>
+			<div class="col-md-12" id="seasonalPackages">
+				<div class="col-md-3">
+					<img class="seasonPackage" src="images/christmas boxes.jpg">
+					<div class="photoGalleryCaption2"><p>Christmas Boxes</p></div>
+					<img class="seasonPackage" src="images/valentines day boxes.jpg">
+					<div class="photoGalleryCaption2"><p>Valentine's Day Boxes</p></div>
+				</div>
+				<div class="col-md-3">
+					<img class="seasonPackage" src="images/easter singles.jpg">
+					<div class="photoGalleryCaption2"><p>Easter Singles</p></div>
+					<img id="seasonPackage2" src="images/fathers day packages.jpg">
+					<div class="photoGalleryCaption2"><p>Father's Day Packages</p></div>
+				</div>
+				<div class="col-md-3">
+					<img class="seasonPackage" src="images/easter packages.jpg">
+					<div class="photoGalleryCaption2"><p>Easter Packages</p></div>
+					<img class="seasonPackage" src="images/mothers day packages.jpg">
+					<div class="photoGalleryCaption2"><p>Mother's Day Packages</p></div>
+					<div id="trufflePicturesLink"><a id="trufflePicturesLink" href="photos.html"><< Back to truffle pictures</a></div>
+				</div>
+			</div>
+			</div>
+			<footer id="copyright2">&copy; 2013 Beth Garcia. All rights reserved. | Created by Joanna Koseff</footer>
+	  </div>
+	  </div>
+	</div>
+</body>
+</html>
